@@ -1,17 +1,17 @@
 Require Import Coq.Strings.Ascii.
 Require Import Coq.Lists.List.
-
-Open Scope char_scope.
 Open Scope char_scope.
 
 Import ListNotations.
 
-Import ListNotations.
 
 Require Import Turing.Util. 
 Require Import Turing.Lang.
 Require Import List. 
 
+(*
+    Lecture 9, Power, Kleene star, equivalence
+*)
 
 (* Definition of a word and a language *)
 Definition word (* String *) := list ascii.
@@ -29,10 +29,6 @@ Definition In w (L:language) := L w.
 (* Length *) (* String which is a list c a r*)
 Goal length ["c"; "a"; "r"] = 3.
 Proof. reflexivity. Qed. 
-
-
-
-
 
 
 
